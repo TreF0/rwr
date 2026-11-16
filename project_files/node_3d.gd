@@ -59,11 +59,9 @@ func _on_button_pressed() -> void:
 	# only know if it's really succeeded or failed when our
 	# _webxr_session_started() or _webxr_session_failed() methods are called.
 	if not webxr_interface.initialize():
-		#OS.alert("Failed to initialize WebXR")
+		OS.alert("Failed to initialize WebXR")
 		# Zamiast natychmiastowego initialize():
 		return
-	print("WebXR pominięty w emulatorze")
-	return
 func _webxr_session_started() -> void:
 	$CanvasLayer.visible = false
 	# This tells Godot to start rendering to the headset.
