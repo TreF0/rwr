@@ -14,20 +14,20 @@ script = ExtResource("1_a202f")
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.2564)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.167597, 0.2564)
 
 [node name="LeftController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"left_hand"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/LeftController"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
 mesh = SubResource("BoxMesh_edqvp")
 
 [node name="RightController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"right_hand"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/RightController"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.203, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
 mesh = SubResource("BoxMesh_4p2t6")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
